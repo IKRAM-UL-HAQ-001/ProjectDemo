@@ -18,6 +18,7 @@
                     </div>
                 </div>
             </div>
+            @else
             @foreach($shopRecords as $record)
                 <div class="col-md-3 mb-3">
                     <div class="card">

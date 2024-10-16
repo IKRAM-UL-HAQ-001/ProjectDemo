@@ -62,6 +62,15 @@
                                             <div class="invalid-feedback" style="color: white">{{ $message }}</div>
                                         @enderror
                                     </div>
+                                    <div class="form-group row" id="phone_number">
+                                        <label class="col-lg-4 col-form-label" for="phone_number">Phone Number<span class="text-danger">*</span></label>
+                                        <div class="col-lg-8">
+                                            <input type="text" class="form-control" id="phone_number" name="phone_number" placeholder="Enter a Customer Reference Number" value="{{ old('reference_number') }}" >
+                                        </div>
+                                        @error('phone_number')
+                                            <div class="invalid-feedback" style="color: white">{{ $message }}</div>
+                                        @enderror
+                                    </div>
                                     <div class="form-group row " id="customer_name">
                                         <label class="col-lg-4 col-form-label" for="customer_name">Customer Name <span class="text-danger">*</span></label>
                                         <div class="col-lg-8">
@@ -156,6 +165,7 @@
             const cashTypeSelect = document.getElementById('cash_type');
             const bonusAmountField = document.getElementById('bonus-amount-field');
             const paymentTypeField = document.getElementById('payment-type-field');
+            const phoneNumberField = document.getElementById('phone_number');
             const referenceNumberField = document.getElementById('reference_number'); // Correct ID for reference number
             const customerNameField = document.getElementById('customer_name'); // Correct ID for customer name
 
@@ -163,21 +173,25 @@
                 if (cashTypeSelect.value === 'deposit') {
                     bonusAmountField.style.display = 'flex';
                     referenceNumberField.style.display = 'flex';
+                    phoneNumberField.style.display = 'flex';
                     customerNameField.style.display = 'flex';
                     paymentTypeField.style.display = 'block'; // Show payment type
                 } else if (cashTypeSelect.value === 'expense') {
                     bonusAmountField.style.display = 'none';
+                    phoneNumberField.style.display = 'none';
                     referenceNumberField.style.display = 'none';
                     customerNameField.style.display = 'none';
                     paymentTypeField.style.display = 'none'; // Hide payment type
                 } else if (cashTypeSelect.value === 'withdrawal') {
                     bonusAmountField.style.display = 'none';
                     referenceNumberField.style.display = 'none';
+                    phoneNumberField.style.display = 'none';
                     customerNameField.style.display = 'flex';
                     paymentTypeField.style.display = 'none'; // Hide payment type
                 } else {
                     bonusAmountField.style.display = 'none';
                     referenceNumberField.style.display = 'none'; // Keep reference number visible for withdrawal
+                    phoneNumberField.style.display = 'none';
                     customerNameField.style.display = 'none'; // Keep customer name visible for withdrawal
                     paymentTypeField.style.display = 'none'; // Hide payment type
                 }
