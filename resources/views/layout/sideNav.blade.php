@@ -48,10 +48,10 @@
                         </ul>
                     </li>
                     <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
-                                class="icon icon-form"></i><span class="nav-text">HK</span></a>
+                                class="icon icon-form"></i><span class="nav-text">Send to Owner</span></a>
                         <ul aria-expanded="false">
                             <li><a href="{{route('shop.hk.form')}}">Form</a></li>
-                            <li><a href="{{route('shop.hk.list')}}">HK List</a></li>
+                            <li><a href="{{route('shop.hk.list')}}">Send to Owner List</a></li>
                         </ul>
                     </li>
                     <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
@@ -98,7 +98,7 @@
                     <li>
                         <a href="{{route('admin.hk.list')}}" aria-expanded="false">
                             <i class="icon icon-form"></i>
-                            <span class="nav-text">HK List</span>
+                            <span class="nav-text">Send to Owner List</span>
                         </a>
                     </li>
                     <li>
