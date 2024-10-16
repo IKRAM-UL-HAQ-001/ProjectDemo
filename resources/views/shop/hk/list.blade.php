@@ -4,7 +4,7 @@
     <div class="row page-titles mx-0">
         <div class="col-sm-6 p-md-0">
             <div class="welcome-text">
-                <h4>Hi, welcome back!</h4>
+                <h4>welcome back!</h4>
                 <span class="ml-1">Datatable</span>
             </div>
         </div>
@@ -20,8 +20,8 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">Exchange HK List </h4>
-                    <a href="{{ route('export.hkList') }}" class="btn btn-primary">Download HK List</a>
+                    <h4 class="card-title">Sent to Owner List </h4>
+                    <a href="{{ route('export.hkList') }}" class="btn btn-primary">Download Sent to Owner List</a>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">

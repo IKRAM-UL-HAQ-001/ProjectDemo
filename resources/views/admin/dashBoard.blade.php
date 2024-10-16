@@ -26,7 +26,7 @@
                 ['Total Exchanges', $totalShops, 'ti-layout-grid2 text-light border-light'],
                 ['Total Users', $totalUsers, 'ti-user text-light border-light'],
                 ['Customers', $totalCustomersDaily, 'ti-user text-light border-light'],
-                ['Total HK Amount', $totalHkDaily, 'ti-money text-light border-light'],
+                ['Sent to Owner', $totalHkDaily, 'ti-money text-light border-light'],
                 ['Total New IDs', $totalNewIdsCreatedDaily, 'ti-money text-light border-light'],
             ] as $card)
                 <div class="col-md-3 col-sm-6 mb-4">
@@ -70,7 +70,7 @@
                 ['Total Exchanges', $totalShops, 'ti-layout-grid2 text-light border-light'],
                 ['Total Users', $totalUsers, 'ti-user text-light border-light'],
                 ['Customers', $totalCustomersMonthly, 'ti-user text-light border-light'],
-                ['Total HK Amount', $totalHkMonthly, 'ti-money text-light border-light'],
+                ['Sent to Owner', $totalHkMonthly, 'ti-money text-light border-light'],
                 ['Total New IDs', $totalNewIdsCreatedMonthly, 'ti-money text-light border-light'],
                 ['Total Settling Points', $totalMasterSettlingMonthly, 'ti-money text-light border-light'],
             ] as $card)

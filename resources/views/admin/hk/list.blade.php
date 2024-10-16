@@ -20,8 +20,8 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">Exchange HK List </h4>
-                    <a href="{{ route('export.hkList') }}" class="btn btn-primary">Download HK List</a>
+                    <h4 class="card-title">Sent to Owner List </h4>
+                    <a href="{{ route('export.hkList') }}" class="btn btn-primary">Download Sent to Owner List</a>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
